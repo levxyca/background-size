@@ -1,0 +1,98 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #303841;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0 35px;
+}
+
+.header__title {
+  color: #f5f5f5;
+  font-size: 64px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  margin: 25px;
+}
+
+.main {
+  background-color: #d6e6f2;
+  color: #303841;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 1000px;
+  max-width: 100%;
+  min-height: 50vh;
+  box-shadow: 10px 10px 0em #f5f5f5;
+}
+
+.main__propriedades-select {
+  font-size: 18px;
+  text-transform: lowercase;
+  padding: 5px 0;
+  margin: 5px 0;
+}
+
+.main__image {
+  background: #303841;
+  background-image: url("../img/gatinho_fofinho.jpg");
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 350px;
+}
+
+.style__background-cover {
+  background-size: cover;
+}
+
+.style__background-contain {
+  background-size: contain;
+}
+
+.style__background-width {
+  background-size: 50%;
+}
+
+.style__background-width-height {
+  background-size: 50% 25%;
+}
+
+.style__background-varios{
+  background-size: 6px, auto, contain;
+}
+
+.style__background-inherit{
+  background-size: inherit;
+}
+
+.style__background-initial{
+  background-size: initial;
+}
+
+.style__background-unset{
+  background-size: unset;
+}
+
+@media (max-width: 768px) {
+  .header__title {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header__title {
+    font-size: 28px;
+    margin: 25px 0;
+  }
+
+  .main__image-img {
+    width: 200px;
+  }
+}
